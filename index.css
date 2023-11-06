@@ -1,0 +1,258 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+    margin: 20px;
+}
+.flex {
+    display: flex;
+}
+.section1 {
+    background-image: url('header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen tanto horizontal como verticalmente */
+    justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+    margin: 10px 20px;
+}
+.cabecera { /*los parametros que ponemos aqui afectaran a los elemntos anidados dentro del div */
+    justify-content: space-between; /* Importante!!! esto nos justifica el espacio entre los elemntos dentro del div */
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 15px; /* aqui damos la distancia arriba y abajo en primer lugar y a izquierda y derecha*/
+    margin: 10px;
+}
+.logo {
+    background:transparent;
+    padding: 15px;
+    margin: 10px;
+    width: auto;
+}
+.navegacion {
+    background:transparent;
+    padding: 15px;
+    margin: 10px;
+    width: auto;
+}
+.botones-nav {
+    margin: 0 20px;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s; /*hacemos que el cambio de color no sea brusco*/
+}
+.botones-nav:hover {
+    color: rgb(233,116,101)
+}
+.botones-nav i { /* esta clase se aplica a los elementos i (iconos)*/
+    font-size: 20px; /* el tamaño del texto */
+    margin-right: 5px; /* el espacio entre icono y su respectivo texto*/    
+}
+.redes-sociales {
+    display: flex;
+    margin: 0 5px;
+    font-size: 24px;
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s; /*hacemos que el cambio de color no sea brusco*/
+}
+.redes-sociales:hover {
+    color: rgb(233,116,101);
+}
+.div2 { /*los parametros que ponemos aqui afectaran a los elemntos anidados dentro del div */
+    justify-content: space-between; /* Importante!!! esto nos justifica el espacio entre los elemntos dentro del div */
+    background-color: transparent;
+    padding: 15px 15px; /* aqui damos la distancia arriba y abajo en primer lugar y a izquierda y derecha*/
+    margin: 10px;
+}
+.p3 {
+    background:transparent;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    font-size: 24px;
+    color: rgba(233,116,101,0.75);
+    text-align: center;
+}
+.section2 {
+    justify-content: space-between;
+    background-color: rgb(188, 187, 187);
+    padding: 5px;
+    margin: 10px 20px;
+}
+.div3 {
+    justify-content: space-between; 
+    background-color: rgb(227, 224, 224);
+    padding: 15px 15px;
+    margin: 10px;
+    width: 70%;
+}
+.div3a {
+    display: flex;
+}
+.div3b {
+    display: flex;
+}
+.div3c {
+    display: flex;
+}
+.div4 {
+    justify-content: space-around;
+    background-color: rgb(227, 224, 224);
+    padding: 15px 15px;
+    margin: 10px;
+    width: 30%;
+}
+.p4 {
+    justify-content: center;
+    background: rgb(188, 187, 187);
+    padding: 15px;
+    margin: 10px;
+    width: 50%;
+}
+.p4 img{
+    width: 100%; /*hacemos que la imagen ocupe todo el ancho de su contenedor*/
+    height: auto; /*mantenmos la relación de aspecto de la foto original*/
+}
+.imagen-con-texto {
+    position: relative;
+    text-align: center;
+}
+.imagen-con-texto .fecha {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+}
+.titulo-articulo {
+    width: auto; /* Asegura que tenga el mismo ancho que la foto */
+    background-color: rgb(233,116,101);
+    color: white; /* Color del texto */
+    text-align: left; /* Centra el texto horizontalmente */
+    padding: 10px; /* Espaciado interior */
+}
+.texto-articulo {
+    column-count: 2; /*esto controla el numero de columnas para el texto*/
+    column-gap: 10px; /*aqui controlamos el espacio entre columnas*/
+}
+.negrita {
+    font-weight: bold;
+}
+.p5 {
+    background: transparent;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+}
+.p6 {
+    background: transparent;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+.section3 {
+    justify-content: space-between;
+    background-color: rgb(188, 187, 187);
+    padding: 0 5px;
+    margin: 10px 20px;
+}
+.p7 {
+    background: rgb(227, 224, 224);
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+@media (max-width: 1024px) { /*version tablet*/
+    .cabecera {
+        flex-direction: column;
+        align-items: flex-start; /*alineamos a la izquierda*/
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .botones-nav {
+        margin: 10px 0; /*ponemos un espacio de 10px arriba y abajo entre los elementos del menu*/
+        text-align: center; /*centramos el texto del botón*/
+        width: 100%; 
+    }
+    .section2 {
+        background-color: rgb(188, 187, 187);
+        display: block; /* cambiamos a block para que los elementos aparezcan en columna*/
+        padding: 5px;
+        margin: 10px 20px;
+    }
+    .div3 {
+        justify-content: space-between; 
+        padding: 15px 15px;
+        margin: 10px;
+        width: auto;
+    }
+    .div4 {
+        justify-content: space-around;
+        padding: 15px 15px;
+        margin: 10px;
+        width: auto;
+    }
+}
+@media (max-width: 650px) { /*version movil*/
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navegacion {
+        flex-direction: column;
+    }
+    .botones-nav {
+        margin: 10px 0; /*ponemos un espacio de 10px arriba y abajo entre los elementos del menu*/
+        text-align: center; /*centramos el texto del botón*/
+        width: 100%; 
+    }
+    .div2 {
+        display: block;
+    }
+    .p3 {
+        background:transparent;
+        padding: 15px;
+        margin: 15px;
+        width: auto;
+    }
+    .div3 {
+        background-color: rgb(227, 224, 224);
+        padding: 15px 15px;
+        margin: 10px;
+        width: auto;
+    }
+    .div3a {
+        display: block;
+    }
+    .div3b {
+        display: block;
+    }
+    .p4 {
+        background: rgb(188, 187, 187);
+        padding: 15px;
+        margin: 10px;
+        width: auto;
+    }
+    .div3c {
+        display: block;
+        width: auto;
+    }
+    .p5 {
+        background: transparent;
+        padding: 15px;
+        margin: 10px;
+        width: auto;
+    }
+    
+}
